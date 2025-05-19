@@ -1,0 +1,80 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  background: linear-gradient(135deg, #fdfbfb, #ebedee);
+  font-family: 'Quicksand', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+h1 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+.tabs {
+  display: flex;
+  width: 100%;
+  max-width: 500px;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.tab {
+  background: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+  flex: 1;
+  margin: 0 5px;
+  border: 2px solid #ccc;
+  transition: background-color 0.3s, color 0.3s;
+}
+.tab:hover, .tab.active {
+  background-color: #a8edea;
+  color: #000;
+  border-color: #7ed6df;
+}
+.content {
+  width: 100%;
+  max-width: 500px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+.clock-display, .alarm-set, .stopwatch-display, .timer-display, .world-clock-display {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.clock-time {
+  font-size: 48px;
+  margin: 10px 0;
+  color: #333;
+}
+.clock-date {
+  font-size: 18px;
+  color: #666;
+}
+.btn {
+  font-size: 18px;
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  border-radius: 12px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.btn-start { background-color: #a8edea; color: #333; }
+.btn-stop { background-color: #f8c291; color: #333; }
+.btn-reset { background-color: #c8d6e5; color: #333; }
+.btn:hover { opacity: 0.85; }
+input[type="time"], input[type="number"] {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  margin: 10px 0;
+  width: 100%;
+  background: #f1f1f1;
+  color: #333;
+}
